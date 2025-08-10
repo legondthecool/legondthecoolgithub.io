@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowboarding</title>
+    <link rel="stylesheet" href="snowboarding.css">
+    <script src="snowboarding.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1> Snowboarding </h1>
+    </header>
+    <!-- navigation bar -->
+    <nav>
+        <button id="hambtn"> <img src="img2/hambtn.png" 
+        alt="hamburger icon"  width="20"> </button>
+        
+        <ul>
+            <li><button id="page1btn">History</button></li>
+            <li><button id="page2btn">Techniques</button></li>
+            <li><button id="page3btn">Minigame</button></li>
+        </ul>
+    </nav>
+     <main id="pagecontainer">
+        <!-- Page 1 -->
+        <section class="page" id="page1">
+            <h2>History of Snowboarding</h2>
+            <p>Snowboarding originated in the United States in the 1960s and it was essentially two skis straped together 
+                and was called a 'snurfer'.The sport gained traction in the 1970s and 80s, with pioneers like Jake Burton 
+                and  Tom Sims developing boards and bindings, making jumping with snowboards possible.
+                It has since evolved into a popular winter sport worldwide. </p>
+                <h4>Learn more by clicking the video below.</h4>
+                <div class="vidcontainer"> 
+                    <iframe class="resp_vid" 
+                    src="https://www.youtube.com/embed/DWCt1i5niYM" title="History of Snowboarding" ></iframe>
+                </div>
+        </section>
+        <!-- Page 2 -->
+        <section class="page" id="page2">
+            <h2>Snowboarding Techniques</h2>
+            <p>Snowboarding techniques can be split into two main categories, carving and tricking. There are different 
+                types of snowboards designed for different styles, such as freestyle(for tricks), freeride(for carving) 
+                and all-mountain(all-rounder). Carving involves making smooth, controlled turns on the snow, while tricks 
+                involve jumps, spins, and flips but in order to do tricks, one must learn carving first as it allows one to
+                make sharp turns smoothly which is needed for doing tricks. 
+                Mastering these techniques requires practice and balance.</p>
+            <h4>Learn more about carving by clicking the video below.</h4>
+            <div class ="vidcontainer">
+                <iframe class="resp_vid"
+                src="https://www.youtube.com/embed/2_0korhCv_A" title="carving"></iframe>
+            </div>
+            <h4>Learn more about tricks by clicking the video below.</h4>
+            <div class ="vidcontainer">
+                <iframe class="resp_vid"
+                src="https://www.youtube.com/embed/lxOxyBSqGmc"  title="tricks"></iframe>
+            </div>
+        </section>
+        <!-- Page 3  -->
+        <section class="page3" id="page3">
+            <button id="resetBtn">click to reset</button>
+            <button id="stopBtn">click to stop</button>
+            <button id="leftBtn">Move Left</button>
+            <button id="rightBtn">Move Right</button>
+            <button id="upBtn">Move Up</button>
+            <button id="downBtn">Move Down</button>
+            <h2>Snowboard Minigame</h2>
+            <p>Test your snowboarding skills with this minigame! Use the buttons or arrow keys to move.</p>
+            <img id ="snowboarder" src="img2/snowboard.png" alt="Snowboarder">
+            <img id="tree" src="img2/snowy_tree.png" alt="Tree" width="70" >
+            <h2 id="scoreBox">Score: 0</h2>
+        </section>
+    </main>
+</body>

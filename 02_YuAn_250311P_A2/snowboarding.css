@@ -1,0 +1,83 @@
+body {
+    font: Arial, sans-serif;
+    font-size: 20px;
+    background-color: rgb(252, 226, 140);
+}
+.page{width:80vw;height:160vh;border:1px solid red}
+nav ul li{display:inline;}
+#page1{background:lightcoral;}
+#page2{background:lightgreen;}
+.page3{width:100vw;height:100vh;border:1px solid red}
+#page3{background:lightblue;}
+#hambtn{display:none;}
+.vidcontainer {
+    position: relative;
+    overflow: hidden;
+    width: 75%;
+    padding-top: 45.25%;
+}
+.resp_vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:800px){
+    nav ul li{display:block;}
+    #hambtn{display:block;}
+    nav ul{display:none;}
+    .vidcontainer {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+}
+.menuShow{display:block;}
+#snowboarder {
+    position: relative;
+    width:10vw;
+    transition: all 0.5s;
+}
+#resetBtn {
+    background: greenyellow;
+    width: 100px;
+    transition: background 2s;
+}
+#resetBtn:hover {
+    background: salmon;
+    }
+#resetBtn.rotAnim {
+    animation: btnFrames 5s ;
+}  
+#stopBtn {
+    background: red;
+    width: 100px;
+    transition: background 2s;
+} 
+#stopBtn:hover {
+    background: darkorange;
+    width: 100px;
+}
+#stopBtn.rotAnim {
+    animation: btnFrames 5s;
+}
+#tree {
+    background-color: aqua;
+    position: relative;
+    width: 10vw;
+    transition: all 0.5s;
+}
+#scoreBox {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px;
+    transition: all 0.5s;
+}
+#scoreBos.rotAnim {
+    animation: btnFrames 5s;
+}
